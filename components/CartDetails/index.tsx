@@ -7,8 +7,8 @@ export const CartDetails: React.FC<{ cart: Cart }> = ({ cart }) => {
     <div className="mb-10">
       <h1 className="text-primary font-semibold text-4xl mb-10">My Cart</h1>
 
-      <div className="flex gap-28">
-        <div className="flex-1">
+      <div className="flex flex-col md:flex-row gap-5 md:gap-28">
+        <div className="md:flex-1">
             <CartTable cart={cart} />
 
         </div>

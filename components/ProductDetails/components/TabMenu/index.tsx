@@ -13,8 +13,8 @@ export const TabMenu: React.FC<TabMenuProps> = ({ items, defaultSelected }) => {
   const [selectedTab, setSelectedTab] = useState(defaultSelected ?? 0);
   return (
     <>
-      <div className="w-full bg-accent rounded-xl h-[3rem]">
-        <div className="flex flex-row gap-5 items-center px-5 h-full">
+      <div className="w-full bg-accent-light rounded-xl h-[3rem]">
+        <div className="flex flex-row gap-5 items-center px-5 h-full overflow-x-scroll">
           {items.map((item, index) => (
             <div
               className={`min-w-48  py-2 px-5 cursor-pointer ${
@@ -24,7 +24,7 @@ export const TabMenu: React.FC<TabMenuProps> = ({ items, defaultSelected }) => {
               }`}
               onClick={() => setSelectedTab(index)}
             >
-              {item.title}
+              <p className="whitespace-nowrap">{item.title}</p>
             </div>
           ))}
         </div>

@@ -16,7 +16,7 @@ export const CouponCard: React.FC<CouponCardProps> = ({title, termsLink, code}: 
                 </p>
                 <Link href={termsLink}><p className="text-primary text-sm">Terms & Conditions</p></Link>
               </div>
-              <div className="min-w-[7rem] cursor-pointer min-h-[4rem] bg-accent flex items-center justify-center flex-col">
+              <div className="min-w-[7rem] cursor-pointer min-h-[4rem] bg-accent-light flex items-center justify-center flex-col">
                 <p className="text-accent">Use Code</p>
                 <p className="text-base">{code}</p>
               </div>

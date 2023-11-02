@@ -10,8 +10,8 @@ export const Carousel: React.FC<{ images: string[]; title: string }> = ({
 }) => {
   const [currentImage, setCurrentImage] = useState(0);
   return (
-    <div className="flex-1 flex flex-col items-center">
-      <div className="relative w-[35rem] h-[35rem]">
+    <div className="px-20 flex-1 md:flex-0 flex flex-col md:px-0 items-center">
+      <div className="relative w-[25rem] h-[25rem] md:w-[30rem] md:h-[30rem]">
         <Image
           className="rounded-xl"
           src={images[currentImage]}
@@ -29,7 +29,7 @@ export const Carousel: React.FC<{ images: string[]; title: string }> = ({
           icon={<Image src={"/rightArrow.svg"} alt="Right Arrow" width={20} height={20} />}
         />
         {images.map((image, index) => (
-          <div className="relative w-[7.5rem] h-[7.5rem]">
+          <div className="relative w-[2.5rem] h-[2.5rem] md:w-[5rem] md:h-[5rem]">
             <Image
               className="rounded-xl"
               src={image}

@@ -33,7 +33,7 @@ const categories = [
 
 export const Header: React.FC = () => {
   return (
-    <header className="w-full h-20 bg-white flex flex-row justify-between px-5">
+    <header className="w-full h-20 bg-white flex flex-row gap-5 justify-between px-5 overflow-hidden">
       <div className="flex flex-row gap-10 items-center">
         <Link href="/">
           <Image
@@ -44,13 +44,13 @@ export const Header: React.FC = () => {
             priority
           />
         </Link>
-        <div className="flex gap-3">
+        <div className="hidden md:flex gap-3">
           {categories.map((category) => (
             <Link href={category.link}>{category.name}</Link>
           ))}
         </div>
       </div>
-      <div className="flex flex-row gap-10 items-center">
+      <div className="flex-1 flex flex-row gap-3 md:gap-10 justify-end items-center">
         <div>
           <SearchInput />
         </div>

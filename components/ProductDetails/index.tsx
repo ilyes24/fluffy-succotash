@@ -64,9 +64,9 @@ export const ProductDetails: React.FC<{ product: Product }> = ({ product }) => {
   ];
   return (
     <>
-      <div className="flex flex-row my-10">
+      <div className="flex flex-col gap-10 md:gap-0 md:flex-row my-10">
         <Carousel images={product.images} title={product.title} />
-        <div className="flex-1 flex flex-col gap-5 max-w-[50vw]">
+        <div className="flex-1 flex flex-col gap-0 md:max-w-[50vw]">
           <div>
             <p className="text-4xl font-semibold text-base">
               {product.brand}
@@ -84,7 +84,7 @@ export const ProductDetails: React.FC<{ product: Product }> = ({ product }) => {
             </p>
           </div>
           <hr />
-          <div className="flex flex-row justify-between items-center gap-3">
+          <div className="flex flex-col md:flex-row justify-between md:items-center gap-3">
             <div>
               <p className="text-xl font-semibold text-base">
                 Delivery Details
@@ -94,9 +94,9 @@ export const ProductDetails: React.FC<{ product: Product }> = ({ product }) => {
               </p>
             </div>
             <div className="flex-1">
-              <form className="flex bg-accent px-3 py-3 gap-3">
+              <form className="flex bg-accent-light px-3 py-3 gap-3">
                 <input
-                  className="grow-[2] bg-accent outline-none"
+                  className="grow-[2] bg-accent-light outline-none"
                   type="text"
                   placeholder="Apply Valid Pincode"
                 />
@@ -104,7 +104,7 @@ export const ProductDetails: React.FC<{ product: Product }> = ({ product }) => {
               </form>
             </div>
           </div>
-          <div className="flex gap-3">
+          <div className="flex gap-3 mt-3 md:mt-0">
             <p className="text-base text-xl font-semibold">Quantity:</p>
             <input type="number" min="0" max={product.stock} />
           </div>

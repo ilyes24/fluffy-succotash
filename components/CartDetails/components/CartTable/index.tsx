@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const CartTable: React.FC<{ cart: Cart }> = ({ cart }) => {
   return (
-    <table className="w-full">
+    <table className="w-full overflow-x-scroll">
       <thead>
         <tr>
           <th className="text-accent font-normal text-start">Product</th>

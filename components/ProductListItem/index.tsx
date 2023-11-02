@@ -18,7 +18,7 @@ export const ProductListItem: React.FC<{ product: Product }> = ({
 
       <div className="flex flex-col gap-2 mt-3">
         <div className="flex justify-between items-center">
-          <p className="m-0 text-base text-base">{product.category}</p>
+          <p className="m-0 text-base">{product.category}</p>
 
           <Image src={"/wishlist.svg"} alt="Wishlist" width={20} height={20} />
         </div>

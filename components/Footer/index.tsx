@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const Footer: React.FC = () => {
   return (
-    <div className="bg-primary flex flex-row justify-between items-center h-[22rem] px-20">
+    <div className="bg-primary flex flex-row justify-between items-center h-[22rem] px-5 md:px-20">
       <div className="flex flex-row gap-20">
         <div>
           <h3 className="text-white">Shop by Category</h3>

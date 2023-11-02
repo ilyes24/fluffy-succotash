@@ -5,7 +5,7 @@ export const SearchInput: React.FC = () => {
   return (
     <form>
       <Input
-        className="w-96"
+        className="w-13 md:w-96"
         size="large"
         placeholder="Search for products or brands....."
         prefix={
